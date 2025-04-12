@@ -1,0 +1,129 @@
+.voyageur{
+    position: sticky;
+}
+.navbar{
+    height:5rem;
+    background-color:white;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size : 2rem;
+}
+
+.nav-link{
+    color:#222222 !important;
+}
+.a{
+    text-decoration: none;
+}
+.f-info-links a:hover{
+    text-decoration: none;
+    vertical-align: middle;
+    color: #222222;
+}
+.f-info-links,.f-info-socials,.f-info-brand{
+    width:100%;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+.f-info-socials i{
+    font-size : 1.2rem;
+    margin-right : 1rem;
+}
+
+.f-info{
+    text-align: center;
+    height : 10rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    align-items:space-evenly;
+}
+
+.card{
+    border:none !important;
+    margin-bottom : 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width : 100% !important;
+    object-fit: cover !important;;
+
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.place-link {
+    text-decoration: none !important;
+}
+
+.card-img-overlay:hover{
+     opacity : 0.1;
+     background-color:white;
+}
+
+/*show page*/
+.show-img{
+    height : 25rem;
+}
+
+.our{
+    display:inline;
+}
+.country{
+    display: inline;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: none;
+}
+
+.img-fluid-show{
+    height:20rem;
+    width : 32rem;
+    margin-left : 0;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.row-related{
+    display : flex;
+}
+
+a{
+    display : inline;
+}
+
+
+.related-p{
+    display: inline;
+    margin-top:8rem;
+    margin-left: 2rem;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+footer {
+    background-color: grey;
+    margin-top : 2rem;
+}
+.d-block{
+    border-radius: 20px;
+}
+
+.d-block:hover,.img-fluid-show:hover{
+    opacity : 0.9;
+}

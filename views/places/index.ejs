@@ -1,0 +1,94 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <% if(success && success.length) { %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <%= success %>
+        <button 
+        type="button" 
+        class="btn-close" 
+        data-bs-dismiss="alert" 
+        aria-label="Close">
+    </button>
+        </div>
+       <% } %>
+    <h3 class="mt-3">Trending:</h3>
+
+    <!-- TOP 10 Carousel -->
+    <div id="topPlacesCarousel" class="carousel slide mt-3" data-ride="carousel">
+        <div class="carousel-inner">
+            <% top10.forEach((place, index) => { %>
+                <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                    <a href="/places/<%= place._id %>">
+                        <img src="<%= place.image %>" class="d-block w-80" style="height: 500px; width: 80%; margin: auto;" alt="<%= place.title %>">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black;"><%= place.title %></h5>
+                        <p style="color: black;"><%= place.description %></p>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+        <a class="carousel-control-prev" href="#topPlacesCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#topPlacesCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br><br><br>
+
+    <h2>Where does your Heart Wander to ?</h2> 
+    <br>
+    <div class="row-related">
+    <a href="/places/relatedplaces/<%= mountain._id %>" class="links">
+    <h3>Mountains</h3>
+    <img src="<%= mountain.image %>" class="img-fluid-show" alt="Mountains">
+    </a>
+    <p class="related-p">Mountains rise majestically, their peaks touching the sky and their slopes carved by time. They offer breathtaking views, serene landscapes, and a sense of awe that draws adventurers and dreamers alike.</p></div>
+    <br><br>
+
+    <div class="row-related">
+    <a href="/places/relatedplaces/<%= beach._id %>" class="links">
+        <h3>Beaches</h3>
+        <img src="<%= beach.image %>" class="img-fluid-show" alt="Beaches">
+    </a>
+    <p class="related-p">Beaches are serene escapes where golden sands meet the endless sea, offering a perfect blend of relaxation and adventure. With the sound of crashing waves and the warmth of the sun, they invite you to unwind and embrace nature's beauty.</p></div>
+
+    <br><br>
+    <div class="row-related">
+    <a href="/places/relatedplaces/<%= snow._id %>" class="links">
+        <h3>Snowy</h3>
+        <img src="<%= snow.image %>" class="img-fluid-show" alt="Snowy Places">
+    </a>
+    <p class="related-p">Snowy landscapes transform the world into a serene winter wonderland, where sparkling snowflakes blanket the earth in pure white. The crisp air and quiet beauty invite a sense of peace, adventure, and awe, offering endless possibilities for exploration and reflection.</p></div>
+
+    <br><br>
+    <div class="row-related">
+    <a href="/places/relatedplaces/<%= desert._id %>" class="links">
+        <h3>Desert</h3>
+        <img src="<%= desert.image %>" class="img-fluid-show" alt="Desert">
+    </a>
+    <p class="related-p">Deserts are vast, arid landscapes where endless stretches of golden sands meet the horizon, offering a striking blend of harsh beauty and tranquility. Despite their ruggedness, these stark environments are teeming with resilient life, creating a unique and captivating allure for adventurers and dreamers alike.</p>
+    </div>
+    <br><br>
+
+
+    <div class="row-related">
+    <a href="/places/relatedplaces/<%= mystery._id %>" class="links">
+        <h3>Mysterious</h3>
+        <img src="<%= mystery.image %>" class="img-fluid-show" alt="Mysterious Places">
+    </a>
+    <p class="related-p">Mysterious places stir the imagination, shrouded in enigma and untold stories. From ancient ruins to hidden caves, these locations evoke curiosity and wonder, drawing explorers to uncover their secrets and uncover the allure of the unknown.</p></div>
+    <br><br>
+
+    <div class="row-related">
+    <a href="/places/relatedplaces/<%= horror._id %>" class="links">
+        <h3>Haunted</h3>
+        <img src="<%= horror.image %>" class="img-fluid-show" alt="Haunted Places">
+    </a>
+    <p class="related-p">Haunted places are steeped in eerie legend and chilling mystery, where the past lingers in shadowy whispers and unsettling sights. These abandoned sites, with their spectral inhabitants and ghostly tales, captivate thrill-seekers and those drawn to the supernatural, offering an eerie glimpse into the unknown.</p></div>
+
+    <br><br>
+</body>

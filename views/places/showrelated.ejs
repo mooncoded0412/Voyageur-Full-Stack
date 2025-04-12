@@ -1,0 +1,23 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+  <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 mt-3">
+  <% for(place of relatedPlaces){ %>
+
+    <a href="/places/<%=place.id%>" class="place-link">
+    <div class="card col">
+    <img src="<%= place.image %>" 
+    class="card-img-top" 
+    alt="place_ka_image"
+    style="height:22rem">
+
+   <div class="card-img-overlay"></div>
+    <div class="card-body">
+      <h3><%= place.title %></h3>
+      <p class="card-text"><%= place.description %><br>
+        <h5><%= place.location %></h5></p>
+    </div>
+  </div>
+</a>
+  <% } %>
+  </div>
+</body>

@@ -1,0 +1,17 @@
+.carousel-item img {
+    height: 500px;
+    width: 80%;
+    margin: auto;
+  }
+  .carousel-item .carousel-caption h5,
+  .carousel-item .carousel-caption p {
+      color: black; /* Set text color to black */
+      font-size: 48px; /* Set font size to 18px */
+  }
+  
+  .img-fluid{
+    margin-left: 100px;;
+  }
+  body{
+    background-color: rgb(68, 39, 39) !important;
+  }

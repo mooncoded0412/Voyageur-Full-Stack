@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNavAltMarkup">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav">
+      <a class="nav-link" href="/places">Home</a>
+      <a class="nav-link" href="/places">Explore</a>
+      <a class="nav-link" href="/places"><i class="fa-solid fa-mountain"></i> Mountains</a>
+      <a class="nav-link" href="/places"><i class="fa-solid fa-water"></i> Beaches</a>
+      <a class="nav-link" href="/places"><i class="fa-regular fa-snowflake"></i> Snowy</a>
+      <a class="nav-link" href="/places"><i class="fa-solid fa-skull"></i> Haunted</a>
+  </div>
+ <% if(!curruser) { %>
+  <div class="navbar-nav ml-auto">
+      <a class="nav-link" href="/signup">SignUp</a>
+      <a class="nav-link" href="/login">Login</a></div>
+  <% } %>
+  <% if(curruser) { %>
+      <a class="nav-link" href="/logout">LogOut</a>
+  <% } %>
+  </div>
+</div>
+  </div>
+</nav>
