@@ -1,21 +1,30 @@
-VOYAGEUR
+# VOYAGEUR - Full-Stack Web Application
 
-clone using :
+## 🚀 Project Overview
+Voyageur is a **full-stack web application** designed for managing travel destinations. The app allows users to upload, view, and manage their favorite places.
+
+## 🛠 Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (or MongoDB Atlas)
+
+## 💻 Getting Started
+
+### Clone the Repository
+To get started, clone the repository to your local machine:
+
+```bash
 git clone https://github.com/mooncoded0412/Voyageur-Full-Stack.git
 
-Technologies used :
-Frontend : HTML, CSS, Java Script
-Backend : Node.js, Express.js
-DataBase : MongoDB
-
-Install Dependencies : 
+Install Dependencies :
 npm install
 
-Configure Environment Variables:
+Configure Environment Variables
+Create a .env file in the root of your project and add your environment variables:
 SECRET_KEY=your-secret-key
 
-Run the Website :
+Run the Website
+Start the application using Nodemon:
 nodemon app.js
+Your app will be live at http://localhost:8080/.
 
-To View, navigate to :
-http://localhost:8080/places
