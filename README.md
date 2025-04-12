@@ -16,15 +16,22 @@ To get started, clone the repository to your local machine:
 git clone https://github.com/mooncoded0412/Voyageur-Full-Stack.git
 ```
 
-###Install Dependencies :
+## Install Dependencies :
+```bash 
 npm install
+```
 
-###Configure Environment Variables
+## Configure Environment Variables
 Create a .env file in the root of your project and add your environment variables:
+```bash
 SECRET_KEY=your-secret-key
+```
 
-####Run the Website
+## Run the Website
 Start the application using Nodemon:
+```bash
 nodemon app.js
+```
+
 Your app will be live at http://localhost:8080/.
 
