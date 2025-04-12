@@ -1,12 +1,12 @@
 # VOYAGEUR - Full-Stack Web Application
 
 ## 🚀 Project Overview
-Voyageur is a **full-stack web application** designed for managing travel destinations. The app allows users to upload, view, and manage their favorite places.
+Voyageur is a **full-stack web application** designed for managing travel destinations. The app allows users to view, and manage their favorite places.
 
 ## 🛠 Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB (or MongoDB Atlas)
+- **Database**: MongoDB
 
 ## 💻 Getting Started
 
