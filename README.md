@@ -33,5 +33,5 @@ Start the application using Nodemon:
 nodemon app.js
 ```
 
-Your app will be live at http://localhost:8080/.
+Your app will be live at http://localhost:8080/places.
 
